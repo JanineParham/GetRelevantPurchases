@@ -3,7 +3,7 @@ from datetime import datetime
 
 ##Import CSV File##
 fields = ['Date', 'Transaction', 'Description']
-df = pd.read_excel(r'/Users/janineparham/Desktop/purchases_excel/2022Transactions.xls', usecols=fields, index_col=None)
+df = pd.read_excel(r'/Users/user/location/filename.xls', usecols=fields, index_col=None)
 totalSpent = 0
 for i in range(len(df.index)):
     #Check if the purchase was during a weekday
